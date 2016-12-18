@@ -134,12 +134,12 @@ public class PearlDiver {
 
                             if (state == RUNNING) {
 
-                                state = COMPLETED;
-
                                 for (int i = 0; i < CURL_HASH_LENGTH; i++) {
 
                                     transactionTrits[TRANSACTION_LENGTH - CURL_HASH_LENGTH + i] = ((((int) (midCurlStateCopyLow[i] >> bitIndex)) & 1) == 0) ? 1 : (((((int) (midCurlStateCopyHigh[i] >> bitIndex)) & 1) == 0) ? -1 : 0);
                                 }
+
+                                state = COMPLETED;
 
                                 notifyAll();
                             }
