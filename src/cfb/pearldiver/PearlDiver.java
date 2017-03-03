@@ -5,7 +5,7 @@ package cfb.pearldiver;
  */
 public class PearlDiver {
 
-    public static final int TRANSACTION_LENGTH = 8019;
+    public static final int TRANSACTION_LENGTH = 21141;
 
     private static final int CURL_HASH_LENGTH = 243;
     private static final int CURL_STATE_LENGTH = CURL_HASH_LENGTH * 3;
